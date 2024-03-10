@@ -3,124 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Games Dashboard</title>
+<title>Game Panel</title>
 <style>
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #222222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
   }
   
-  .dashboard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    max-width: 800px;
-  }
-
-  .dashboard-item-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 30px;
-    border: 4px solid transparent;
-    transition: border-color 0.3s ease;
-  }
-
-  .dashboard-item-container:hover {
-    border-color: rgba(255, 255, 255, 0.5);
-  }
-
-  .dashboard-item-border {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border-radius: 30px;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
-    z-index: -1;
-  }
-
-  .dashboard-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333333;
-    padding: 40px 20px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+  .panel {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
     border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 
-  .dashboard-item:hover {
-    transform: scale(1.1);
-  }
-
-  .dashboard-item img {
-    max-width: 100px;
-    max-height: 100px;
-    margin-bottom: 20px;
-  }
-
-  .dashboard-item a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+  .button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #444;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
     text-align: center;
-    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
   }
 
-  /* Custom Border Gradients */
-  .dashboard-item-border:nth-child(1) {
-    background: linear-gradient(to bottom right, #ff3333, #ffcc00);
-  }
-  .dashboard-item-border:nth-child(2) {
-    background: linear-gradient(to bottom right, #00ccff, #663399);
-  }
-  .dashboard-item-border:nth-child(3) {
-    background: linear-gradient(to bottom right, #993399, #ff6699);
+  .button:hover {
+    background-color: #555;
   }
 </style>
 </head>
 <body>
-<div class="dashboard">
-  <div class="dashboard-item-container">
-    <div class="dashboard-item-border"></div>
-    <div class="dashboard-item">
-      <img src="logo1.png" alt="Logo 1">
-      <a href="https://hvgs.github.io/maccas/online.html?file=mcdonalds.swf">McDonalds Game</a>
-    </div>
-  </div>
-  <div class="dashboard-item-container">
-    <div class="dashboard-item-border"></div>
-    <div class="dashboard-item">
-      <img src="logo2.png" alt="Logo 2">
-      <a href="https://hvgs.github.io/games/game?file=jelly-escape.swf">Jelly Game</a>
-    </div>
-  </div>
-  <div class="dashboard-item-container">
-    <div class="dashboard-item-border"></div>
-    <div class="dashboard-item">
-      <img src="logo3.png" alt="Logo 3">
-      <a href="https://hvgs.github.io/games/game?file=run-3.swf">Run 3</a>
-    </div>
-  </div>
-  <div class="dashboard-item-container">
-    <div class="dashboard-item-border"></div>
-    <div class="dashboard-item">
-      <img src="logo3.png" alt="Logo 3">
-      <a href="https://hvgs.github.io/games/game?file=bloons-td5.swf">Run 3</a>
-    </div>
-  <div class="dashboard-item-container"></div>
-  <div class="dashboard-item-container"></div>
-  <div class="dashboard-item-container"></div>
+
+<div class="panel">
+  <a href="https://www.coolmathgames.com/0-bloons-tower-defense-5" class="button">Bloons TD 5</a>
+  <a href="https://www.coolmathgames.com/0-run" class="button">Run</a>
+  <a href="https://www.coolmathgames.com/0-moto-x3m" class="button">Moto X3M</a>
+  <a href="https://www.coolmathgames.com/0-moto-x3m-2" class="button">Moto X3M 2</a>
+  <a href="https://www.coolmathgames.com/0-fireboy-and-watergirl-1-forest-temple" class="button">Fireboy and Watergirl</a>
 </div>
+
 </body>
 </html>
