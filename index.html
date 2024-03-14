@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Game Panel</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #222;
-    color: #fff;
-  }
-  
-  .panel {
-    width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-
-  .button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #444;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    transition: background-color 0.3s ease;
-  }
-
-  .button:hover {
-    background-color: #555;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Download Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .download-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .download-link {
+            flex: 0 0 48%;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-
-<div class="panel">
-  <a href="online?file=swf/bloons-td5.swf" class="button">Bloons TD 5</a>
-  <a href="online?file=swf/run.swf" class="button">Run</a>
-  <a href="online?file=swf/moto-x3m.swf" class="button">Moto X3M</a>
-  <a href="online?file=swf/moto-x3m-2.swf" class="button">Moto X3M 2</a>
-  <a href="online?file=swf/fireboy-and-watergirl.swf" class="button">Fireboy and Watergirl</a>
-</div>
-
+    <div class="container">
+        <h1>Game Downloader</h1>
+        <div class="download-links">
+            <a href="#" class="download-link">Download for Windows (.exe)</a>
+            <a href="#" class="download-link">Download for macOS (.dmg)</a>
+        </div>
+    </div>
 </body>
 </html>
