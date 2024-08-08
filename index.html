@@ -3,74 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Download Dashboard</title>
+    <title>Game Dashboard</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .download-links {
+            background-color: #121212;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
             display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        .download-link {
-            flex: 0 0 48%;
-            text-align: center;
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .game-tile {
+            background-color: #1E1E1E;
+            border-radius: 15px;
             padding: 20px;
-            border-radius: 8px;
-            background-color: #007bff;
-            color: #fff;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-tile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-tile a {
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            color: inherit;
+            font-size: 1.2em;
         }
-        .download-link:hover {
-            background-color: #0056b3;
-        }
+
+        .minesweeper { background-color: #585858; }
+        .candycrush { background-color: #FF69B4; }
+        .flappybird { background-color: #00BFFF; }
+        .crossroady { background-color: #FFD700; }
+        .pingpong { background-color: #228B22; }
+        .tetris { background-color: #FF4500; }
+        .wordle { background-color: #6A5ACD; }
+        .slope { background-color: #32CD32; }
+        .motox3m { background-color: #FF8C00; }
+        .cookieclicker { background-color: #D2691E; }
+        .drifthunters { background-color: #8A2BE2; }
+        .pacman { background-color: #FFFF00; }
+        .spaceinvaders { background-color: #191970; }
+        .angrybirds { background-color: #FF0000; }
+        .fireboyandwatergirl { background-color: #4682B4; }
+        .bloonstd5 { background-color: #8B4513; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Bloons TD5</h1>
-        <div class="download-links">
-            <a href="apps/bloons-td5.exe" class="download-link">Download for Windows (.exe)</a>
-            <a href="online?file=swf/bloons-td5.swf" class="download-link">Play Online (GLITCHY)</a>
-        </div>
-    </div>
-    <div class="container">
-        <h1>Slime Laboratory</h1>
-        <div class="download-links">
-            <a href="apps/slime-laboratory.exe" class="download-link">Download for Windows (.exe)</a>
-            <a href="online?file=swf/slime-laboratory.swf" class="download-link">Play Online (GLITCHY)</a>
-        </div>
-    </div>
-    <div class="container">
-        <h1>Game Downloader</h1>
-        <div class="download-links">
-            <a href="#" class="download-link">Download for Windows (.exe)</a>
-            <a href="online?file=swf/flappybird2.swf" class="download-link">Play Online (GLITCHY)</a>
-        </div>
-    </div>
-    <div class="container">
-        <h1>TEMPLATE</h1>
-        <div class="download-links">
-            <a href="apps/bloons-td5.exe" class="download-link">Download for Windows (.exe)</a>
-            <a href="online?file=swf/bloons-td5.swf" class="download-link">Play Online (GLITCHY)</a>
-        </div>
+    <div class="dashboard">
+        <div class="game-tile minesweeper"><a href="https://hvgs.github.io/minesweeper">Minesweeper</a></div>
+        <div class="game-tile candycrush"><a href="https://hvgs.github.io/candycrush">Candy Crush</a></div>
+        <div class="game-tile flappybird"><a href="https://hvgs.github.io/flappybird">Flappy Bird</a></div>
+        <div class="game-tile crossroady"><a href="https://hvgs.github.io/crossroady">Cross Roady</a></div>
+        <div class="game-tile pingpong"><a href="https://hvgs.github.io/pingpong">Ping Pong</a></div>
+        <div class="game-tile tetris"><a href="https://hvgs.github.io/tetris">Tetris</a></div>
+        <div class="game-tile wordle"><a href="https://hvgs.github.io/wordle">Wordle</a></div>
+        <div class="game-tile slope"><a href="https://hvgs.github.io/slope">Slope</a></div>
+        <div class="game-tile motox3m"><a href="https://hvgs.github.io/motox3m">MotoX3M</a></div>
+        <div class="game-tile motox3m"><a href="https://hvgs.github.io/motox3m/2">MotoX3M 2</a></div>
+        <div class="game-tile motox3m"><a href="https://hvgs.github.io/motox3m/4-winter">MotoX3M 4</a></div>
+        <div class="game-tile motox3m"><a href="https://hvgs.github.io/motox3m/5-pool-party">MotoX3M 5</a></div>
+        <div class="game-tile motox3m"><a href="https://hvgs.github.io/motox3m/6-spooky-land">MotoX3M 6</a></div>
+        <div class="game-tile cookieclicker"><a href="https://hvgs.github.io/cookieclicker">Cookie Clicker</a></div>
+        <div class="game-tile drifthunters"><a href="https://hvgs.github.io/drifthunters">Drift Hunters</a></div>
+        <div class="game-tile pacman"><a href="https://hvgs.github.io/games/online?file=swf/pacman.swf">Pacman</a></div>
+        <div class="game-tile spaceinvaders"><a href="https://hvgs.github.io/games/online?file=swf/space-invaders.swf">Space Invaders</a></div>
+        <div class="game-tile angrybirds"><a href="https://hvgs.github.io/games/online?file=swf/angry-birds.swf">Angry Birds</a></div>
+        <div class="game-tile fireboyandwatergirl"><a href="https://hvgs.github.io/games/online?file=swf/fireboy-and-watergirl.swf">Fireboy & Watergirl</a></div>
+        <div class="game-tile bloonstd5"><a href="https://hvgs.github.io/games/online?file=swf/bloons-td5.swf">Bloons TD5</a></div>
     </div>
 </body>
 </html>
