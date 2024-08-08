@@ -18,19 +18,25 @@
 
         .dashboard {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             width: 90%;
             max-width: 1200px;
         }
 
         .game-tile {
+            position: relative;
             background-color: #1E1E1E;
             border-radius: 15px;
-            padding: 20px;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             transition: transform 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
         }
 
         .game-tile:hover {
@@ -41,7 +47,18 @@
         .game-tile a {
             text-decoration: none;
             color: inherit;
-            font-size: 1.2em;
+            font-size: 1.4em;
+            z-index: 1;
+        }
+
+        .game-tile img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+            filter: blur(5px);
+            z-index: 0;
         }
 
         .minesweeper { background-color: #585858; }
@@ -65,11 +82,23 @@
 <body>
     <div class="dashboard">
         <div class="game-tile minesweeper"><a href="https://hvgs.github.io/minesweeper">Minesweeper</a></div>
-        <div class="game-tile candycrush"><a href="https://hvgs.github.io/candycrush">Candy Crush</a></div>
-        <div class="game-tile flappybird"><a href="https://hvgs.github.io/flappybird">Flappy Bird</a></div>
-        <div class="game-tile crossroady"><a href="https://hvgs.github.io/crossroady">Cross Roady</a></div>
+        <div class="game-tile candycrush">
+            <img src="https://i.imgur.com/8PxYbXe.jpg" alt="Candy Crush">
+            <a href="https://hvgs.github.io/candycrush">Candy Crush</a>
+        </div>
+        <div class="game-tile flappybird">
+            <img src="https://i.imgur.com/WqnWQG4.png" alt="Flappy Bird">
+            <a href="https://hvgs.github.io/flappybird">Flappy Bird</a>
+        </div>
+        <div class="game-tile crossroady">
+            <img src="https://i.imgur.com/VPzErXc.png" alt="Cross Roady">
+            <a href="https://hvgs.github.io/crossroady">Cross Roady</a>
+        </div>
         <div class="game-tile pingpong"><a href="https://hvgs.github.io/pingpong">Ping Pong</a></div>
-        <div class="game-tile tetris"><a href="https://hvgs.github.io/tetris">Tetris</a></div>
+        <div class="game-tile tetris">
+            <img src="https://i.imgur.com/OqT8P4k.jpg" alt="Tetris">
+            <a href="https://hvgs.github.io/tetris">Tetris</a>
+        </div>
         <div class="game-tile wordle"><a href="https://hvgs.github.io/wordle">Wordle</a></div>
         <div class="game-tile slope"><a href="https://hvgs.github.io/slope">Slope</a></div>
         <div class="game-tile motox3m"><a href="https://hvgs.github.io/motox3m">MotoX3M</a></div>
@@ -77,7 +106,10 @@
         <div class="game-tile motox3m"><a href="https://hvgs.github.io/motox3m/4-winter">MotoX3M 4</a></div>
         <div class="game-tile motox3m"><a href="https://hvgs.github.io/motox3m/5-pool-party">MotoX3M 5</a></div>
         <div class="game-tile motox3m"><a href="https://hvgs.github.io/motox3m/6-spooky-land">MotoX3M 6</a></div>
-        <div class="game-tile cookieclicker"><a href="https://hvgs.github.io/cookieclicker">Cookie Clicker</a></div>
+        <div class="game-tile cookieclicker">
+            <img src="https://i.imgur.com/9WbGptN.jpg" alt="Cookie Clicker">
+            <a href="https://hvgs.github.io/cookieclicker">Cookie Clicker</a>
+        </div>
         <div class="game-tile drifthunters"><a href="https://hvgs.github.io/drifthunters">Drift Hunters</a></div>
         <div class="game-tile pacman"><a href="https://hvgs.github.io/games/online?file=swf/pacman.swf">Pacman</a></div>
         <div class="game-tile spaceinvaders"><a href="https://hvgs.github.io/games/online?file=swf/space-invaders.swf">Space Invaders</a></div>
